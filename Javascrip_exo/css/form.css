@@ -1,0 +1,116 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+
+.form-control {
+  border: 1px solid #dddddd;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #5b9bd5;
+  box-shadow: 0 0 8px rgba(91, 155, 213, 0.25);
+}
+
+label {
+  font-weight: 600;
+  color: #555555;
+}
+
+.btn-primary {
+  background-color: #5b9bd5;
+  border-color: #5b9bd5;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #4a8cc7;
+  border-color: #4a8cc7;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+  background-color: #5b9bd5;
+  border-color: #5b9bd5;
+}
+
+hr {
+  border-top: 1px solid #eeeeee;
+}
+
+@media (max-width: 768px) {
+  .form-control {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+}
+
+
+.custom-select {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-select:focus {
+  border-color: #5b9bd5;
+  outline: 0;
+  box-shadow: 0 0 8px rgba(91, 155, 213, 0.25);
+}
+
+
+
+
+.loading {
+  width: 50px; /* Ajustez la largeur selon vos besoins */
+  height: 50px; /* Ajustez la hauteur selon vos besoins */
+  background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH4AfgMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAQYDBAUCB//EAC4QAAEEAQMDAgUDBQAAAAAAAAEAAgMEEQUSIQYTMUFRFGFxgaEVIpEjJENS8P/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFREBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhEDEQA/APhqIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIt6rVqy6fbsS3mQ2IdnZrGMkz5OHYI4GBzyg0gF1NT0KzpOtjStRkgil3MDpBIHMaHY5JHoM8rBe1SzdqU6k7mGKkwxwhsbWkAnJyQMn7rRQWar0fLqHVVjQdM1KjYdE1zha7m2J4AB4PPvj+Vxv0u4YbE7K8skFZ+yaaNhcxhzjl3haYJHgkfRdWl1DqdHRrej1bJjo23bpotjTuP1IyPA8H0QclFa9Y0/SNU/ToOi6moWLIrF11jmuedwxzj+c448YVVcC1xBGCPKCEREBERAREQEREG1Rp2rfefVrvmFaMzzbW5DGAjLj8uR/KnVLx1G9LbMFeuZCD2qzNkbcADgenhQyIMousMtRteZO0YAXby3Gd3jG308+fRa2MoIRbMNKxM1rooZHtfIImlrScvPho9z8ltyaHfgkljsU54nxM7kjXsILG5A3H5ZIGfHKDlou4/pfV2yCM6bbDy0OA7LuQSG+3uQPuFrQ6HqVl4ZVo2ZnEF2GRE8A4P5BH14QToGuajoN11rSrLoJnRmNzgActPkYIPsFv9XaDFo3wcseq19Qdch7zzD/AIyfQ8nOc+ePB4VewWlWqN/Tx6KfG+tOdeM2WygnYGZ+vjH5UFTRSeCoVBERAREQEREGc/D/AAoGJfie4cnI2bMDHzznP2WJvlZqxc+N9eOu2V8hbtcGkvbjPDce/r9FgQWfpzqCvpNXtzVpZZWWfiIiyUMGdhYQeCfDjgjwV2dP6qoUqTaFeg59XtmJxnly90Z3kj9oA8yE+COG8Z5Xz8HCnefcoPpb+taLZJnRUngS2G2XAyjPcEscn+vA/p49+fPAXNf1jUmjrxahp3fZHsfKGOaBYka6Q5c1zSCHdw59c/uCo293uVG4ojLI4OcSBjJ4Hsrroty9S6I1KNujxzU7Lg111zM9s8cZ/wCwSqVXiMkgACvvUdfV+m+lqmnnU4paF9veMEWDg8Hk+cZx9whXz5/LjxjleVJOSoRRERAREQEREHqOR8Tw+N7mOHhzTghe5GMDIyyQOc4EubgjZz+fdYl6a4tcHDGQcjIyEHlF7/ZsPJ3cY44UbDtDuMHxyggcrYr1XzOAA4WNrCJA12BnHqr/ANJWOmodEvfq7Hm5j+3LQfb0x4OfdA6d0Kpo00FzqenL8BNGTGQPJ9Dwqlr9mKW7MKm4V957YceQ3PH4XR1/qi9qNSCnPOXwwDEbcAfLn3VYcdxyUEIiICIiAiIgIiICIiApyoRBOSvbZXNGASFjRB6c4uOSvKIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiIP/Z'); /* Remplacez 'lien_vers_votre_image.gif' par le chemin de votre image */
+  background-size: cover;
+  animation: spin 2s linear infinite;
+  margin: auto;
+  margin-top: 20px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+
+
+}
+
+
+/* Style cohérent pour les champs de saisie */
+
+/* Adaptations pour les écrans plus petits */
+@media (max-width: 768px) {
+  .custom-select {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}

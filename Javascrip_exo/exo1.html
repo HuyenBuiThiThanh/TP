@@ -1,0 +1,87 @@
+<!-- Cach 1 -->
+<!-- <script>
+    let array_entre = [10, 12, 14, 16, 18, 20,10]
+    var Total = 0
+    array_entre.forEach(calculTotal);
+    function calculTotal(index) {
+        Total += index
+    }
+    console.log(Total)
+</script>
+
+
+<script>
+    let array_entre2 = [10, 12, 14, 16, 18, 20,10]
+    let Total2 = 0
+    let length = array_entre2.length
+    for ( index = 0; index < length; index += 1) {
+        Total2 += array_entre2[index]; 
+    }
+    console.log(Total2)
+</script>
+
+
+
+<script>    
+    function calculTotal(array){
+        var Total3 = 0
+        for (var i = 0; i < array.length; i++) {
+            var pos = array[i];
+             Total3 += pos
+        }
+        return Total3
+    }
+
+    var Total3 = calculTotal(array_entre)
+    console.log(Total3)
+</script> -->
+
+
+
+
+<!-- <h1 id="result"> result </h1>
+<script>
+    var Total =0
+    var array_entre =  [50,30,30,10,10,10]
+    array_entre.forEach(calculTotal);
+    function calculTotal(index) {
+        Total += index
+    }
+    console.log("result : " + Total)
+    document.getElementById("result").innerHTML = "Result :  " + Total
+
+</script>   -->
+
+
+
+<!-- Actuel -->
+
+<!-- <h1 id="result" onclick = "calculTotal"> result </h1>
+<script>
+    function calculTotal(array) {
+        var total = 0
+        array.forEach(t => {
+            total = total + t
+        });
+        return total
+    }
+    var arrayTotal = [50,30,30,10,10,10,1]
+    var total = calculTotal(arrayTotal)
+    console.log("result : " + total)
+    document.getElementById("result").innerHTML = "Result :  " + total
+    
+</script> -->
+
+<h1 id="result" style="cursor:pointer" onmouseover="this.style.color='red'" onclick = "calculTotal([50,30,30,10,10,10,2])"> Click here </h1>
+
+<script>
+    function calculTotal(array) {
+        var total = 0
+        array.forEach(t => {
+            total = total + t
+        });
+        
+         console.log("result : " + total)
+         document.getElementById("result").innerHTML = "Result :  " + total   
+    }
+</script>
